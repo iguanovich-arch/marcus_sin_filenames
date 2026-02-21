@@ -1,0 +1,71 @@
+<?php
+/*
+  $Id$
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2010 osCommerce
+
+  Released under the GNU General Public License
+*/
+?>
+<!-- footer -->
+<footer class="footer-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- f-weghit -->
+				<div class="f-weghit text-center">
+					<ul class="f-link">
+						<li>
+							<a href="<?php echo tep_href_link('shipping_info.php')?>">
+								<?php echo FOOTER_TITLE_SHIP_INFO; ?>
+							</a>
+						</li>
+						<li>|</li>
+						<li>
+							<a href="<?php echo tep_href_link('terms_condition.php')?>">
+								<?php echo FOOTER_TITLE_TERMS; ?>
+							</a>
+						</li>
+						<li>|</li>
+						<li>
+							<a href="<?php echo tep_href_link('privacy.php')?>">
+								<?php echo FOOTER_TITLE_PRIVACY; ?>
+							</a>
+						</li>
+						<li>|</li>
+						<li>
+							<a href="<?php echo tep_href_link('refund_policy.php')?>">
+								<?php echo FOOTER_TITLE_REFUND_POLICY; ?>
+							</a>
+						</li>
+						<li>|</li>
+						<li>
+							<a href="<?php echo tep_href_link('delivery_information.php')?>">
+								<?php echo FOOTER_TITLE_DELIVERY_INFO; ?>
+							</a>
+						</li>          
+					</ul>
+					<ul class="f-link s-media">
+						<?php if($facebook_link){?> <li><a class="fac" target="_blank" href="https://www.facebook.com/<?php echo $facebook_link; ?>"><i class="fa fa-facebook"></i></a> </li><?php } ?>
+						<?php if($twitter_link){?><li><a class="twi" target="_blank" href="https://twitter.com/<?php echo $twitter_link; ?>"><i class="fa fa-twitter"></i></a></li><?php } ?>
+						<?php if($google_link){ ?><li><a class="goo" target="_blank" href="<?php echo $google_link; ?>"><i class="fa fa-google-plus"></i></a></li><?php } ?>
+						<?php if($pinterest_link){ ?><li><a class="pin" target="_blank" href="https://www.pinterest.com/<?php echo $pinterest_link; ?>"><i class="fa fa-pinterest"></i></a></li><?php } ?>
+						<?php if($instagram_link){ ?><li><a class="insta" target="_blank" href="https://www.instagram.com/<?php echo $instagram_link; ?>"><i aria-hidden="true" class="fa fa-instagram"></i></a> </li><?php } ?>
+					</ul>
+					
+				</div>
+				<!-- /f-weghit -->
+			</div>
+			
+			<!-- copyright -->
+			<div class="col-lg-12 text-center f-link">
+					&copy; <?php echo $store_copyright; ?>
+				</div>
+			<!-- /copyright -->
+		</div>
+	</div>
+</footer>
+<!-- /footer -->
